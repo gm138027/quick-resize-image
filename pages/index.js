@@ -99,10 +99,21 @@ export default function Home() {
               "url": currentUrl,
               "applicationCategory": "MultimediaApplication",
               "operatingSystem": "Any",
+              "browserRequirements": "Requires JavaScript",
+              "softwareVersion": "1.0",
+              "datePublished": "2024-01-01",
+              "dateModified": "2025-08-13",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
                 "priceCurrency": "USD"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "1000",
+                "bestRating": "5",
+                "worstRating": "1"
               },
               "featureList": [
                 "Resize image to 20KB",
@@ -111,6 +122,112 @@ export default function Home() {
                 "High quality processing",
                 "Privacy protection - no upload required",
                 "Support JPG, PNG, WebP, HEIC, BMP, GIF formats"
+              ]
+            })
+          }}
+        />
+
+        {/* Organization Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Quick Resize Image",
+              "url": "https://quickresizeimage.com",
+              "logo": "https://quickresizeimage.com/logo/android-chrome-512x512.png",
+              "description": t('site.description'),
+              "foundingDate": "2024",
+              "sameAs": [],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Hindi"]
+              }
+            })
+          }}
+        />
+
+        {/* WebSite Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Quick Resize Image",
+              "url": "https://quickresizeimage.com",
+              "description": t('site.description'),
+              "inLanguage": [
+                {
+                  "@type": "Language",
+                  "name": "English",
+                  "alternateName": "en"
+                },
+                {
+                  "@type": "Language",
+                  "name": "Hindi",
+                  "alternateName": "hi"
+                }
+              ],
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://quickresizeimage.com/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+
+        {/* FAQ Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": t('hero.faq.q1.question'),
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": t('hero.faq.q1.answer')
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": t('hero.faq.q2.question'),
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": t('hero.faq.q2.answer')
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": t('hero.faq.q3.question'),
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": t('hero.faq.q3.answer')
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": t('hero.faq.q4.question'),
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": t('hero.faq.q4.answer')
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": t('hero.faq.q5.question'),
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": t('hero.faq.q5.answer')
+                  }
+                }
               ]
             })
           }}

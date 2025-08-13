@@ -82,6 +82,58 @@ export default function TermsOfServicePage() {
 
         {/* Robots meta */}
         <meta name="robots" content="index, follow" />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": t('title'),
+              "description": t('description'),
+              "url": currentUrl,
+              "inLanguage": locale === 'hi' ? 'hi' : 'en',
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Quick Resize Image",
+                "url": "https://quickresizeimage.com"
+              },
+              "about": {
+                "@type": "Thing",
+                "name": "Terms of Service",
+                "description": "Terms of service for Quick Resize Image online tool"
+              },
+              "dateModified": "2025-08-13",
+              "datePublished": "2024-01-01"
+            })
+          }}
+        />
+
+        {/* BreadcrumbList Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": locale === defaultLocale ? `${baseUrl}/` : `${baseUrl}/${locale}`
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": t('title'),
+                  "item": currentUrl
+                }
+              ]
+            })
+          }}
+        />
       </Head>
 
       <Layout>
