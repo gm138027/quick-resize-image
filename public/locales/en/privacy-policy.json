@@ -43,7 +43,7 @@
   },
   "thirdPartyServices": {
     "title": "Third-Party Services",
-    "content": "We may use third-party analytics services (such as Google Analytics) to understand how our service is used. These services may collect anonymous usage data in accordance with their own privacy policies."
+    "content": "We use Google Analytics to understand how our service is used. Google Analytics collects anonymous usage data such as page views, user interactions, and general location information. This data helps us improve our service. You can opt out of Google Analytics by using browser extensions or disabling JavaScript. For more information, visit Google's Privacy Policy."
   },
   "userRights": {
     "title": "Your Rights",

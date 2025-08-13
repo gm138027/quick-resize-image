@@ -4,6 +4,7 @@
  */
 import { useTranslation } from 'next-i18next'
 import OutputFormatSelector from '../shared/components/OutputFormatSelector'
+import { trackImageProcessing } from '../../utils/analytics'
 
 export default function ResizeToKBInteractionComponent({
   currentValue,
