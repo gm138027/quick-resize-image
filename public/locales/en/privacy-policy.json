@@ -1,0 +1,69 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: August 13, 2025",
+  "introduction": {
+    "title": "Introduction",
+    "content": "Quick Resize Image (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our free online image resizing service at quickresizeimage.com (the \"Service\")."
+  },
+  "dataCollection": {
+    "title": "Information We Collect",
+    "localProcessing": {
+      "title": "Local Processing",
+      "content": "Our service processes images entirely in your browser using client-side JavaScript. Your images never leave your device and are not uploaded to our servers."
+    },
+    "noPersonalData": {
+      "title": "No Personal Data Collection",
+      "content": "We do not collect, store, or process any personal information, including names, email addresses, or contact details."
+    },
+    "technicalData": {
+      "title": "Technical Information",
+      "content": "We may collect basic technical information such as browser type, device type, and general location (country level) for analytics purposes only."
+    }
+  },
+  "dataUsage": {
+    "title": "How We Use Information",
+    "purposes": [
+      "Provide and maintain our image resizing service",
+      "Improve user experience and service performance",
+      "Analyze usage patterns to enhance our service",
+      "Ensure service security and prevent abuse"
+    ]
+  },
+  "dataSharing": {
+    "title": "Information Sharing",
+    "content": "We do not sell, trade, or share your information with third parties. Since image processing happens locally in your browser, your images and personal data remain completely private."
+  },
+  "cookies": {
+    "title": "Cookies and Local Storage",
+    "content": "We may use cookies and local storage to remember your preferences (such as language settings) and improve your experience. You can disable cookies in your browser settings."
+  },
+  "dataSecurity": {
+    "title": "Data Security",
+    "content": "Since all image processing occurs locally in your browser, your images never leave your device. This provides the highest level of security and privacy protection."
+  },
+  "thirdPartyServices": {
+    "title": "Third-Party Services",
+    "content": "We may use third-party analytics services (such as Google Analytics) to understand how our service is used. These services may collect anonymous usage data in accordance with their own privacy policies."
+  },
+  "userRights": {
+    "title": "Your Rights",
+    "content": "Since we don't collect personal data, there is no personal information to access, modify, or delete. You have full control over any images you process as they remain on your device."
+  },
+  "childrenPrivacy": {
+    "title": "Children's Privacy",
+    "content": "Our service is not directed to children under 13. We do not knowingly collect personal information from children under 13."
+  },
+  "policyChanges": {
+    "title": "Changes to This Policy",
+    "content": "We may update this Privacy Policy from time to time. We will notify users of any material changes by posting the new Privacy Policy on this page with an updated \"Last updated\" date."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "content": "If you have any questions about this Privacy Policy, please contact us at:",
+    "email": "QuickResizeImage@proton.me"
+  },
+  "navigation": {
+    "backToHome": "← Back to Quick Resize Image",
+    "homeDescription": "Return to our free online image resizing tool"
+  }
+}

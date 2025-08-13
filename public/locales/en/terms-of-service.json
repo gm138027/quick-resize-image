@@ -1,0 +1,88 @@
+{
+  "title": "Terms of Service",
+  "lastUpdated": "Last updated: August 13, 2025",
+  "introduction": {
+    "title": "Introduction",
+    "content": "These Terms of Service (\"Terms\") govern your use of Quick Resize Image (\"Service\") operated by Quick Resize Image (\"us\", \"we\", or \"our\"). By accessing or using our Service, you agree to be bound by these Terms."
+  },
+  "serviceDescription": {
+    "title": "Service Description",
+    "content": "Quick Resize Image is a free online tool that allows users to resize and compress images to specific file sizes. All image processing is performed locally in your browser without uploading images to our servers."
+  },
+  "acceptableUse": {
+    "title": "Acceptable Use",
+    "permitted": {
+      "title": "Permitted Uses",
+      "content": "You may use our Service for:",
+      "list": [
+        "Resizing and compressing your own images",
+        "Processing images you have legal rights to modify",
+        "Personal and commercial use of the resizing functionality",
+        "Educational and research purposes"
+      ]
+    },
+    "prohibited": {
+      "title": "Prohibited Uses",
+      "content": "You may not use our Service for:",
+      "list": [
+        "Processing copyrighted images without permission",
+        "Illegal, harmful, or offensive content",
+        "Attempting to reverse engineer or copy our service",
+        "Overloading our servers or disrupting service availability",
+        "Any activity that violates applicable laws or regulations"
+      ]
+    }
+  },
+  "intellectualProperty": {
+    "title": "Intellectual Property",
+    "ourRights": {
+      "title": "Our Rights",
+      "content": "The Service, including its design, code, and functionality, is owned by Quick Resize Image and protected by copyright and other intellectual property laws."
+    },
+    "userContent": {
+      "title": "Your Content",
+      "content": "You retain all rights to images you process using our Service. We do not claim any ownership over your images as they are processed locally in your browser."
+    }
+  },
+  "disclaimer": {
+    "title": "Disclaimer of Warranties",
+    "content": "Our Service is provided \"as is\" without any warranties, express or implied. We do not guarantee that the Service will be uninterrupted, error-free, or meet your specific requirements."
+  },
+  "limitationOfLiability": {
+    "title": "Limitation of Liability",
+    "content": "To the maximum extent permitted by law, Quick Resize Image shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data or profits."
+  },
+  "serviceAvailability": {
+    "title": "Service Availability",
+    "content": "We strive to maintain high service availability but do not guarantee uninterrupted access. We may temporarily suspend the Service for maintenance, updates, or other operational reasons."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "content": "Your privacy is important to us. Please review our Privacy Policy to understand how we handle information when you use our Service."
+  },
+  "modifications": {
+    "title": "Modifications to Terms",
+    "content": "We reserve the right to modify these Terms at any time. We will notify users of material changes by posting the updated Terms on our website with a new \"Last updated\" date."
+  },
+  "termination": {
+    "title": "Termination",
+    "content": "We may terminate or suspend access to our Service immediately, without prior notice, for any reason, including breach of these Terms."
+  },
+  "governingLaw": {
+    "title": "Governing Law",
+    "content": "These Terms shall be governed by and construed in accordance with applicable international laws. Any disputes shall be resolved through binding arbitration."
+  },
+  "severability": {
+    "title": "Severability",
+    "content": "If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect."
+  },
+  "contact": {
+    "title": "Contact Information",
+    "content": "If you have any questions about these Terms of Service, please contact us at:",
+    "email": "QuickResizeImage@proton.me"
+  },
+  "navigation": {
+    "backToHome": "← Back to Quick Resize Image",
+    "homeDescription": "Return to our free online image resizing tool"
+  }
+}

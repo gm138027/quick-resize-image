@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="32" height="32" rx="6" fill="#059669"/>
+  
+  <!-- 图片框架 -->
+  <rect x="6" y="8" width="20" height="16" rx="2" fill="white" opacity="0.9"/>
+  <rect x="8" y="10" width="16" height="12" rx="1" fill="#f1f5f9"/>
+  
+  <!-- 调整大小箭头 */
+  <path d="M4 4 L8 4 L8 8" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M28 28 L24 28 L24 24" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- 图片元素 */
+  <circle cx="12" cy="14" r="1.5" fill="#94a3b8"/>
+  <path d="M8 20 L12 16 L16 20 L20 16 L24 20" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

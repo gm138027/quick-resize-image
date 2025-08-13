@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English Homepage -->
+  <url>
+    <loc>https://quickresizeimage.com/</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quickresizeimage.com/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://quickresizeimage.com/hi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quickresizeimage.com/" />
+  </url>
+
+  <!-- Hindi Homepage -->
+  <url>
+    <loc>https://quickresizeimage.com/hi</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quickresizeimage.com/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://quickresizeimage.com/hi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quickresizeimage.com/" />
+  </url>
+
+  <!-- English Privacy Policy -->
+  <url>
+    <loc>https://quickresizeimage.com/privacy-policy</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quickresizeimage.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://quickresizeimage.com/hi/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quickresizeimage.com/privacy-policy" />
+  </url>
+
+  <!-- Hindi Privacy Policy -->
+  <url>
+    <loc>https://quickresizeimage.com/hi/privacy-policy</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quickresizeimage.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://quickresizeimage.com/hi/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quickresizeimage.com/privacy-policy" />
+  </url>
+
+  <!-- English Terms of Service -->
+  <url>
+    <loc>https://quickresizeimage.com/terms-of-service</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quickresizeimage.com/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://quickresizeimage.com/hi/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quickresizeimage.com/terms-of-service" />
+  </url>
+
+  <!-- Hindi Terms of Service -->
+  <url>
+    <loc>https://quickresizeimage.com/hi/terms-of-service</loc>
+    <lastmod>2025-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quickresizeimage.com/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://quickresizeimage.com/hi/terms-of-service" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quickresizeimage.com/terms-of-service" />
+  </url>
+
+</urlset>

@@ -1,0 +1,164 @@
+{
+  "site": {
+    "title": "Free Online Resize Image to 20KB, 50KB - Quick Image Resizer",
+    "description": "Quick image resize tool to easily compress images online to 50KB, 20KB or any specified size without affecting image quality. Supports single and batch processing, no registration or software download required, completely free.",
+    "name": "QuickResizeImage"
+  },
+  "hero": {
+    "title": "Free Online Resize Image to 20KB, 50KB - Quick Image Resizer",
+    "subtitle": "Quick image resize tool to easily compress images online to 50KB, 20KB or any specified size without affecting image quality. Supports single and batch processing, no registration or software download required, completely free.",
+    "howToTitle": "How to Quickly Resize Image to 20KB or Compress Image to 50KB",
+    "step1Title": "Upload Image",
+    "step1Description": "Drag and drop your image or click to select. Supports JPG, PNG, WebP, HEIC, BMP, GIF formats.",
+    "step2Title": "Set Target Size",
+    "step2Description": "Enter your desired KB size (20KB, 50KB, or any custom size up to 50MB). Default is 20KB.",
+    "step3Title": "Resize Image and Download",
+    "step3Description": "Click \"Resize Image\" and download your high-quality processed result.",
+    "popularSizesTitle": "Quick Select Popular Resize Options",
+    "featuresTitle": "Key Features",
+    "features": {
+      "privacy": {
+        "title": "Complete Privacy Protection",
+        "description": "All processing happens in your browser. Your images never leave your device."
+      },
+      "speed": {
+        "title": "Lightning Fast Processing",
+        "description": "Resize image to 20KB or compress image to 50KB in just 1-5 seconds."
+      },
+      "batch": {
+        "title": "Batch Processing",
+        "description": "Process up to 10 images simultaneously with the same settings."
+      },
+      "quality": {
+        "title": "Professional-Grade Results",
+        "description": "Achieve the same quality as premium paid tools, completely free."
+      },
+      "formats": {
+        "title": "Universal Format Support",
+        "description": "Works with JPG, PNG, WebP, HEIC, BMP, GIF - all major image formats."
+      },
+      "free": {
+        "title": "100% Free Forever",
+        "description": "No registration, no watermarks, no limits. Use our image resizer anytime."
+      }
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": {
+        "question": "How do I compress image to 50KB without losing quality?",
+        "answer": "Our smart algorithm automatically adjusts resolution and compression ratio to maintain optimal quality while reaching your target 50KB size. You can also choose fixed resolution to ensure the image dimensions don't change, though this may reduce compression precision."
+      },
+      "q2": {
+        "question": "Can I resize image to 20KB for different formats?",
+        "answer": "Absolutely! Our image resizer supports all major formats including JPG, PNG, WebP, HEIC, BMP, and GIF."
+      },
+      "q3": {
+        "question": "Can I resize multiple images to 20KB at once?",
+        "answer": "Yes! Our tool supports batch upload. You can upload up to 10 images at once and resize them all with one click."
+      },
+      "q4": {
+        "question": "Are there any limitations using this tool?",
+        "answer": "Our tool has no restrictions. You can use it as much as you need, completely free."
+      },
+      "q5": {
+        "question": "Is this tool safe to use?",
+        "answer": "Absolutely safe! All image processing happens locally in your browser. Your images are never uploaded to our servers, ensuring complete privacy protection."
+      }
+    },
+    "popularSizes": {
+      "20kb": "resize image to 20KB",
+      "50kb": "compress image to 50KB",
+      "30kb": "resize image to 30KB",
+      "15kb": "resize image to 15KB",
+      "10kb": "resize image to 10KB",
+      "40kb": "resize image to 40KB",
+      "200kb": "resize image to 200KB",
+      "500kb": "resize image to 500KB"
+    }
+  },
+  "upload": {
+    "title": "Upload Image",
+    "subtitle": "Drag and drop an image here, or click to select",
+    "supportedFormats": "Supports JPG, PNG, WebP, HEIC, BMP, GIF (Max 50MB)",
+    "selectImages": "Select Images",
+    "batchUploadInfo": "You can upload up to 10 images at a time"
+  },
+  "interface": {
+    "size": "Size",
+    "imageResolution": "Image Resolution:",
+    "autoResolution": "Auto resolution",
+    "fixedResolution": "Fixed resolution",
+    "width": "Width",
+    "height": "Height",
+    "unit": "unit",
+    "outputFormat": "Output format:",
+    "keepOriginal": "Keep Original",
+    "cropNotImplemented": "Crop function not yet implemented"
+  },
+  "descriptions": {
+    "autoResolution": "Automatically adjusts image resolution to achieve target file size with optimal quality",
+    "fixedResolution": "Maintains specified dimensions while adjusting quality to approach target file size"
+  },
+  "errors": {
+    "noImageSelected": "No image selected",
+    "processingFailed": "Image processing failed, please try again",
+    "invalidImageData": "Invalid image data",
+    "targetSizeRequired": "Target size must be greater than 0KB",
+    "targetSizeLimit": "Target size cannot exceed 50MB",
+    "targetSizeExceedsOriginal": "Target size ({{targetKB}}KB) cannot exceed 2x the original size ({{originalKB}}KB)",
+    "compressionFailed": "Compression failed, unable to reach target size",
+    "imageLoadFailed": "Image loading failed",
+    "invalidKBValue": "Please enter a valid KB value ({{min}}-{{max}})",
+    "unsupportedFormat": "Unsupported file format. Please select JPG, PNG, WebP, HEIC, BMP, or GIF files.",
+    "tooManyImages": "Cannot upload {{files}} images. Maximum {{max}} images allowed. You can upload {{allowed}} more images.",
+    "noImages": "No images selected",
+    "invalidTargetSize": "Please set a valid target size",
+    "allImagesFailed": "All images failed to process"
+  },
+  "processing": {
+    "startCompression": "Starting compression to {{targetKB}}KB (mode: {{mode}})",
+    "compressionComplete": "Compression complete: {{actualKB}}KB, error {{errorPercent}}%",
+    "autoMode": "Auto mode: {{originalWidth}}x{{originalHeight}} → target {{targetKB}}KB",
+    "testingCombinations": "Testing {{count}} combinations",
+    "foundHighPrecision": "Found high precision result, ending early"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "close": "Close",
+    "upload": "Upload",
+    "download": "Download",
+    "processing": "Processing...",
+    "resizeImage": "Resize Image",
+    "continueEditing": "Continue Editing",
+    "downloadImage": "Download Image"
+  },
+  "download": {
+    "pageTitle": "Download Processed Images",
+    "pageDescription": "Download your processed images with high quality compression results",
+    "reUploadImage": "Re-upload image",
+    "downloadAll": "Download all",
+    "rename": "Rename",
+    "downloadFile": "Download {{fileName}}"
+  },
+  "navigation": {
+    "brandName": "Quick Resize Image",
+    "language": "Language",
+    "home": "Home",
+    "howToUse": "How to Use",
+    "popularSizes": "Popular Sizes",
+    "faq": "FAQ"
+  },
+  "footer": {
+    "brandName": "Quick Resize Image",
+    "description": "Free online image resizing tool. Compress and resize images to specific KB sizes quickly and securely.",
+    "quickLinks": "Quick Links",
+    "tools": "Tools",
+    "support": "Support",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "contact": "Contact",
+    "copyright": "© 2025 Quick Resize Image. All rights reserved."
+  }
+}

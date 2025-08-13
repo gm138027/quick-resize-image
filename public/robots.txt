@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Disallow download pages (dynamic content)
+Disallow: /download
+Disallow: /*/download
+
+# Disallow API endpoints
+Disallow: /api/
+
+# Allow important pages
+Allow: /privacy-policy
+Allow: /hi/privacy-policy
+Allow: /terms-of-service
+Allow: /hi/terms-of-service
+
+# Allow all static assets
+Allow: /_next/static/
+Allow: /favicon.ico
+Allow: /sitemap.xml
+Allow: /logo/
+
+# Sitemap location
+Sitemap: https://quickresizeimage.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Additional SEO directives
+# Last updated: 2025-08-13
