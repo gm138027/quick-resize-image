@@ -6,13 +6,18 @@ import React from 'react'
 import { useTranslation } from 'next-i18next'
 import ResizeToKBInterface from '../tools/resize-to-kb/ResizeToKBInterface'
 import { useImageManagerContext } from '../tools/shared/contexts/ImageManagerContext'
+import { useTracking } from '../hooks/useTracking'
 
 function SEOHomePageContent() {
     const { t } = useTranslation('common')
     const imageManager = useImageManagerContext()
+    const tracking = useTracking()
 
     // 处理预设KB值点击
     const handlePresetClick = (kbValue) => {
+        // 追踪热门尺寸选择
+        tracking.trackPopularSizeSelection(kbValue)
+
         imageManager.setPreset(kbValue)
         window.scrollTo(0, 0)
     }

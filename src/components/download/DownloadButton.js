@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+import { useTracking } from '../../hooks/useTracking'
 
 /**
  * 下载按钮组件
  * 职责：提供单个文件下载功能，显示下载状态
  */
-export default function DownloadButton({ 
-  onDownload, 
+export default function DownloadButton({
+  onDownload,
   fileName,
-  disabled = false 
+  disabled = false
 }) {
   const { t } = useTranslation('common')
+  const tracking = useTracking()
   const [isDownloading, setIsDownloading] = useState(false)
 
   const handleDownload = async () => {
@@ -18,6 +20,12 @@ export default function DownloadButton({
 
     setIsDownloading(true)
     try {
+      // 追踪下载事件
+      tracking.trackImageDownload({
+        fileType: fileName?.split('.').pop() || 'unknown',
+        fileSizeKB: 0 // 无法获取确切大小，使用0
+      })
+
       await onDownload()
     } catch (error) {
       console.error('Download failed:', error)

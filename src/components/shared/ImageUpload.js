@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { useTranslation } from 'next-i18next'
+import { useTracking } from '../../hooks/useTracking'
 
 /**
  * 独立的图片上传组件
@@ -7,6 +8,7 @@ import { useTranslation } from 'next-i18next'
  */
 export default function ImageUpload({ onImageUpload, onMultipleImageUpload, onUploadError, currentImageCount = 0, className = "" }) {
   const { t } = useTranslation('common')
+  const tracking = useTracking()
   const fileInputRef = useRef(null)
   const [isDragOver, setIsDragOver] = useState(false)
 
@@ -46,6 +48,20 @@ export default function ImageUpload({ onImageUpload, onMultipleImageUpload, onUp
       const allowedCount = MAX_IMAGES - currentImageCount
       onUploadError?.(t('error.tooManyImages', { max: MAX_IMAGES, current: currentImageCount, allowed: allowedCount }))
       return
+    }
+
+    // 追踪上传事件
+    if (imageFiles.length > 1) {
+      // 批量上传追踪
+      const totalSizeKB = imageFiles.reduce((sum, file) => sum + (file.size / 1024), 0)
+      tracking.trackBatchUpload(imageFiles.length, totalSizeKB)
+    } else if (imageFiles.length === 1) {
+      // 单张上传追踪
+      const file = imageFiles[0]
+      tracking.trackImageUpload({
+        fileType: file.type?.split('/')[1] || 'unknown',
+        fileSizeKB: Math.round(file.size / 1024)
+      })
     }
 
     // 如果有多张图片上传回调，使用它；否则逐个调用单张上传回调

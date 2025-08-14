@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { trackLanguageChange } from '../../utils/analytics'
 
 export default function LanguageSelector() {
   const router = useRouter()
@@ -14,9 +13,6 @@ export default function LanguageSelector() {
   const currentLanguage = languages.find(lang => lang.code === router.locale)
 
   const handleLanguageChange = (locale) => {
-    // 跟踪语言切换事件
-    trackLanguageChange(locale)
-
     // 使用 router.pathname 而不是 router.asPath 来避免保留查询参数
     // 这确保语言切换时生成规范的URL，不带查询参数
     router.push(router.pathname, router.pathname, { locale })

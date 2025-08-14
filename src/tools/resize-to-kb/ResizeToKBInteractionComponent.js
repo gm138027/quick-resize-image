@@ -4,7 +4,7 @@
  */
 import { useTranslation } from 'next-i18next'
 import OutputFormatSelector from '../shared/components/OutputFormatSelector'
-import { trackImageProcessing } from '../../utils/analytics'
+import { useTracking } from '../../hooks/useTracking'
 
 export default function ResizeToKBInteractionComponent({
   currentValue,
@@ -22,11 +22,17 @@ export default function ResizeToKBInteractionComponent({
   className = ""
 }) {
   const { t } = useTranslation('common')
+  const tracking = useTracking()
 
   // 处理目标大小输入变化
   const handleSizeInputChange = (value) => {
     const numValue = parseFloat(value) || 0
     onValueChange(numValue)
+
+    // 追踪目标大小输入（只在有效值时追踪）
+    if (numValue > 0 && numValue <= 50000) {
+      tracking.trackTargetSizeInput(numValue)
+    }
 
     // 验证输入值
     const isValid = numValue > 0 && numValue <= 50000 // 最大50MB
@@ -42,12 +48,22 @@ export default function ResizeToKBInteractionComponent({
   const handleWidthChange = (value) => {
     const numValue = parseFloat(value) || 0
     onDimensionsChange?.({ width: numValue, height: currentHeight })
+
+    // 追踪分辨率选择（当宽高都有值时）
+    if (numValue > 0 && currentHeight > 0) {
+      tracking.trackResolutionSelection(numValue, currentHeight)
+    }
   }
 
   // 处理高度变化
   const handleHeightChange = (value) => {
     const numValue = parseFloat(value) || 0
     onDimensionsChange?.({ width: currentWidth, height: numValue })
+
+    // 追踪分辨率选择（当宽高都有值时）
+    if (currentWidth > 0 && numValue > 0) {
+      tracking.trackResolutionSelection(currentWidth, numValue)
+    }
   }
 
   // 处理单位变化
@@ -265,6 +281,10 @@ export default function ResizeToKBInteractionComponent({
                 checked={currentOutputFormat === format.id}
                 onChange={(e) => {
                   const selectedFormat = { id: e.target.value, label: format.label }
+
+                  // 追踪输出格式选择
+                  tracking.trackOutputFormatSelection(selectedFormat.id)
+
                   onOutputFormatChange?.(selectedFormat)
                 }}
                 className="w-4 h-4 text-blue-600 focus:ring-blue-500 focus:ring-2"
