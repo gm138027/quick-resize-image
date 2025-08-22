@@ -276,12 +276,10 @@ export default function ResizeToKBInterface() {
                 currentWidth={resizeToKB.functionParams.width}
                 currentHeight={resizeToKB.functionParams.height}
                 currentUnit={resizeToKB.functionParams.unit}
-                currentOutputFormat={resizeToKB.functionParams.outputFormat || 'original'}
                 onValueChange={(value) => resizeToKB.updateParams({ targetKB: value })}
                 onResolutionModeChange={(mode) => resizeToKB.updateParams({ resolutionMode: mode })}
                 onDimensionsChange={(dimensions) => resizeToKB.updateParams(dimensions)}
                 onUnitChange={(unit) => resizeToKB.updateParams({ unit: unit })}
-                onOutputFormatChange={(format) => resizeToKB.updateParams({ outputFormat: format.id })}
                 onValidationChange={resizeToKB.setValidation}
               />
             </div>

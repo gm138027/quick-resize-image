@@ -3,7 +3,6 @@
  * 支持目标大小设置和分辨率控制选择
  */
 import { useTranslation } from 'next-i18next'
-import OutputFormatSelector from '../shared/components/OutputFormatSelector'
 import { useTracking } from '../../hooks/useTracking'
 
 export default function ResizeToKBInteractionComponent({
@@ -12,12 +11,10 @@ export default function ResizeToKBInteractionComponent({
   currentWidth,
   currentHeight,
   currentUnit = 'px', // 'px', 'cm', 'mm', 'inch'
-  currentOutputFormat = 'original', // 输出格式
   onValueChange,
   onResolutionModeChange,
   onDimensionsChange,
   onUnitChange,
-  onOutputFormatChange,
   onValidationChange,
   className = ""
 }) {
@@ -258,44 +255,7 @@ export default function ResizeToKBInteractionComponent({
         </p>
       </div>
 
-      {/* 输出格式选择 */}
-      <div className="space-y-2">
-        <div className="text-center">
-          <label className="text-sm font-medium text-gray-600">
-            {t('interface.outputFormat') || 'Output format:'}
-          </label>
-        </div>
-        
-        <div className="flex items-center justify-center space-x-6">
-          {[
-            { id: 'original', label: t('interface.keepOriginal') || 'Keep Original' },
-            { id: 'jpeg', label: 'JPG' },
-            { id: 'png', label: 'PNG' },
-            { id: 'webp', label: 'WEBP' }
-          ].map((format) => (
-            <label key={format.id} className="flex items-center space-x-2 cursor-pointer">
-              <input
-                type="radio"
-                name="outputFormat"
-                value={format.id}
-                checked={currentOutputFormat === format.id}
-                onChange={(e) => {
-                  const selectedFormat = { id: e.target.value, label: format.label }
 
-                  // 追踪输出格式选择
-                  tracking.trackOutputFormatSelection(selectedFormat.id)
-
-                  onOutputFormatChange?.(selectedFormat)
-                }}
-                className="w-4 h-4 text-blue-600 focus:ring-blue-500 focus:ring-2"
-              />
-              <span className="text-sm text-gray-700 font-medium">
-                {format.label}
-              </span>
-            </label>
-          ))}
-        </div>
-      </div>
     </div>
   )
 }

@@ -21,7 +21,7 @@ export default function useResizeToKB() {
     if (!imageData) return
 
     setFunctionParams({
-      targetKB: parseFloat((imageData.size / 1024).toFixed(1)),
+      targetKB: 20, // 默认设置为20KB，这是常用的大小
       resolutionMode: 'auto',
       width: imageData.width,
       height: imageData.height,
