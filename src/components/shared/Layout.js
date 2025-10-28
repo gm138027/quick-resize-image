@@ -1,14 +1,32 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import Navigation from './Navigation'
 import Footer from './Footer'
 import { ImageManagerProvider } from '../../tools/shared/contexts/ImageManagerContext'
 
 export default function Layout({ children, title, description }) {
+  const router = useRouter()
   const { t } = useTranslation('common')
   
   const pageTitle = title || t('site.title')
   const pageDescription = description || t('site.description')
+  const baseUrl = 'https://quickresizeimage.com'
+  const path = router?.asPath?.split('#')[0] || ''
+  const currentUrl = `${baseUrl}${path === '/' ? '' : path}`
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": pageTitle,
+    "description": pageDescription,
+    "url": currentUrl,
+    "inLanguage": router?.locale || 'en',
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": t('site.name'),
+      "url": baseUrl
+    }
+  }
 
   return (
     <ImageManagerProvider>
@@ -56,18 +74,7 @@ export default function Layout({ children, title, description }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": t('site.name'),
-              "applicationCategory": "PhotographyApplication",
-              "operatingSystem": "Any",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              }
-            })
+            __html: JSON.stringify(structuredData)
           }}
         />
       </Head>
