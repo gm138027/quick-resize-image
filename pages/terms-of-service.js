@@ -15,14 +15,16 @@ export default function TermsOfServicePage() {
   const currentUrl = locale === defaultLocale
     ? `${baseUrl}/terms-of-service`
     : `${baseUrl}/${locale}/terms-of-service`
+  const pageTitle = `${t('title')} - Quick Resize Image`
+  const pageDescription = 'Terms of Service for Quick Resize Image. Read our terms and conditions for using our free online image resizing tool.'
 
   return (
     <>
       <Head>
-        <title>{t('title')} - Quick Resize Image</title>
+        <title>{pageTitle}</title>
         <meta
           name="description"
-          content="Terms of Service for Quick Resize Image. Read our terms and conditions for using our free online image resizing tool."
+          content={pageDescription}
         />
 
         {/* Canonical URL */}
@@ -57,7 +59,7 @@ export default function TermsOfServicePage() {
 
         {/* Open Graph */}
         <meta property="og:title" content={`${t('title')} - Quick Resize Image`} />
-        <meta property="og:description" content="Terms of Service for Quick Resize Image. Read our terms and conditions for using our free online image resizing tool." />
+        <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:image" content={`${baseUrl}/logo/android-chrome-512x512.png`} />
@@ -76,7 +78,7 @@ export default function TermsOfServicePage() {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${t('title')} - Quick Resize Image`} />
-        <meta name="twitter:description" content="Terms of Service for Quick Resize Image. Read our terms and conditions for using our free online image resizing tool." />
+        <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={`${baseUrl}/logo/android-chrome-512x512.png`} />
         <meta name="twitter:image:alt" content="Quick Resize Image - Terms of Service" />
 
@@ -136,7 +138,10 @@ export default function TermsOfServicePage() {
         />
       </Head>
 
-      <Layout>
+      <Layout
+        title={pageTitle}
+        description={pageDescription}
+      >
         <TermsOfService />
       </Layout>
     </>
