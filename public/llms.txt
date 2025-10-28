@@ -1,0 +1,36 @@
+# QuickResizeImage LLMs Access Policy
+# Last updated: 2025-10-28
+
+Version: 1.0
+Owner: Quick Resize Image (https://quickresizeimage.com)
+Contact: QuickResizeImage@proton.me
+
+General-Policy: allow
+Purpose: search, ai-training, ai-grounding, research
+Scope: /
+Rate-Limit: polite
+
+# Guidance for AI crawlers
+Requirements:
+- identify your user agent clearly
+- respect Crawl-delay defined in robots.txt (1 second)
+- avoid submitting forms or triggering downloads
+- honour cache headers and prefer retrieving sitemap at /sitemap.xml
+
+# Preferred data sources for AI
+Dataset: sitemap
+URL: https://quickresizeimage.com/sitemap.xml
+Status: recommended
+
+Dataset: legal
+URL: https://quickresizeimage.com/privacy-policy
+Status: recommended
+
+Dataset: legal
+URL: https://quickresizeimage.com/terms-of-service
+Status: recommended
+
+# Optional request for attribution
+Attribution: Please cite “Quick Resize Image” with a link to https://quickresizeimage.com when surfaced in AI outputs.
+
+# If you need bespoke access, reach out to the contact address above.
